@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href="/app/style.css" rel="stylesheet" />
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/app/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+	<!--<p id="debug"></p>
+	<input type="button" id="calibrate" value="Calibrate" />
+	<input type="button" id="raw" value="Toggle raw data" />-->
+
+	<svg>
+		<circle id="progress-circle"></circle>
+		<text id="progress-text">Touch to calibrate</text>
+	</svg>
+
+	<input type="button" id="calibrate" value="Recalibrate" />
+
+	<script src="/app/Average.js"></script>
+	<script src="/app/Axis.js"></script>
+	<script src="/app/main.js"></script>
+</body>
+</html>
